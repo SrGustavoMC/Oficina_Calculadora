@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Automática</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="Texto">Calculadora Automática</h1>
+        <h2 class="Texto">Ao colocar os numeros e operadores ela calcula automaticamente</h2>
+    </header>
+    
+    <main>
+        <div class="visor">
+            <input type="text" id="resultado" class="Texto" readonly>
+
+        </div>
+ 
+        <div class="botoes">
+        <input type="button" value="(" onclick="adicionarAoVisor('(')">
+        <input type="button" value=")" onclick="adicionarAoVisor(')')">
+        
+        <input type="button" value="^" onclick="adicionarAoVisor('^')">
+        <input type="button" value="C" onclick="limparVisor()">
+        <input type="button" value="=" onclick="calcular()">
+        
+        <br>
+        <input type="button" value="1"  onclick="adicionarAoVisor('1')">
+        <input type="button" value="2"  onclick="adicionarAoVisor('2')">
+        <input type="button" value="3"  onclick="adicionarAoVisor('3')">
+        <input type="button" value="+" onclick="adicionarAoVisor('+')">
+        
+        <br>
+        <input type="button" value="4" onclick="adicionarAoVisor('4')">
+        <input type="button" value="5" onclick="adicionarAoVisor('5')">
+        <input type="button" value="6" onclick="adicionarAoVisor('6')">
+        <input type="button" value="-"  onclick="adicionarAoVisor('-')"> 
+        
+        <br> 
+        <input type="button" value="7" onclick="adicionarAoVisor('7')">
+        <input type="button" value="8" onclick="adicionarAoVisor('8')">
+        <input type="button" value="9" onclick="adicionarAoVisor('9')">
+        <input type="button" value="*" onclick="adicionarAoVisor('*')">
+        
+        <br>
+        <input type="button" value="0" onclick="adicionarAoVisor('0')">
+        <input type="button" value="." class="texto" onclick="adicionarAoVisor('.')">
+        <input type="button" value="%" class="texto" onclick="adicionarAoVisor('%')">
+        <input type="button" value="M" class="texto" onclick="mostrarMemoria()">
+        <input type="button" value="/" onclick="adicionarAoVisor('/')">
+        </div>
+        
+</main>
+</body>
+</html>
